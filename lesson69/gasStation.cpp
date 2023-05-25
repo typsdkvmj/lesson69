@@ -1,6 +1,6 @@
 #include "gasStation.h"
 
-int calculateTotalGas(Bus* buses, int busSize,
+int GasStation::calculateTotalGas(Bus* buses, int busSize,
 	Truck* trucks, int truckSize, Car* cars, int carSize) {
 	int total = 0;
 

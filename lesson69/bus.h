@@ -9,7 +9,7 @@ private:
 
 public:
 	Bus() : tank(0), number(0) {}
-	Bus(int tank, int passengers) : tank(tank), number(number) {}
+	Bus(int tank, int number) : tank(tank), number(number) {}
 	~Bus() {}
 	int getNumber();
 
@@ -19,4 +19,3 @@ public:
 
 	void setTank(int tank);
 };
-

@@ -11,11 +11,11 @@ public:
 	Truck() : tank(0), weight(0) {}
 	Truck(int tank, int weight) : tank(tank), weight(weight) {}
 	~Truck() {}
-	int getWeight(){};
+	int getWeight();
 
-	void setWeight(int weight ){};
+	void setWeight(int weight );
 
-	int getTank(){};
+	int getTank();
 
-	void setTank(int tank){};
+	void setTank(int tank);
 };

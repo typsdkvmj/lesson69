@@ -20,12 +20,5 @@ void Car::setPower(int power){
 	}
 }
 
-int Car::getTank() {
-	return tank;
-}
 
-void Car::setTank(int tank) {
-	if (tank > 0){
-		this->tank = tank;
-}
-} 
+ 

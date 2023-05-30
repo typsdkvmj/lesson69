@@ -1,21 +1,16 @@
 #pragma once
-#include "main.h"
+#include "transport.h"
 
-class Bus
+class Bus : public Transport
 {
 private:
 	int number;
-	int tank;
 
 public:
-	Bus() : tank(0), number(0) {}
-	Bus(int tank, int number) : tank(tank), number(number) {}
+	Bus() : Transport(), number(0) {}
+	Bus(int tank, int number) :Transport(tank), number(number) {}
 	~Bus() {}
 	int getNumber();
 
 	void setNumber(int number);
-
-	int getTank();
-
-	void setTank(int tank);
 };

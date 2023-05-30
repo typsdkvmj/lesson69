@@ -1,16 +1,15 @@
 #pragma once
-#include "main.h"
+#include "transport.h"
 
-class Car
+class Car:public Transport 
 {
 private:
 	int power;
 	int speed;
-	int tank;
 
 public:
-	Car() : tank(0), power(0),speed(0) {}
-	Car(int tank, int speed, int power) : tank(tank), power(power), speed(speed) {}
+	Car() : Transport(), power(0), speed(0) {}
+	Car(int tank, int speed, int power) : Transport(tank), power(power), speed(speed) {}
 	~Car() {}
 	int getSpeed();
 
@@ -20,8 +19,6 @@ public:
 
 	void setPower(int power);
 
-	int getTank();
-
-	void setTank(int tank);
+	
 };
 

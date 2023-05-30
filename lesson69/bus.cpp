@@ -10,12 +10,3 @@ void Bus::setNumber(int number) {
 	}
 }
 
-int Bus::getTank() {
-	return tank;
-}
-
-void Bus::setTank(int tank) {
-	if (tank > 0) {
-		this->tank = tank;
-	}
-}
